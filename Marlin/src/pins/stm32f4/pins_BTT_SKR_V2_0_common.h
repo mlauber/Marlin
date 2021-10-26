@@ -118,7 +118,7 @@
     #define Z_MIN_PIN                       PC0   // Z-STOP
   #endif
   #ifndef Z_MAX_PIN
-    #define Z_MAX_PIN                       PC15  // PWRDET
+    #define Z_MAX_PIN                       PA0  // E1DET
   #endif
 #else
   #ifndef Z_STOP_PIN
@@ -267,20 +267,20 @@
   //#define E3_HARDWARE_SERIAL Serial1
   //#define E4_HARDWARE_SERIAL Serial1
 
-  #define X_SERIAL_TX_PIN                   PE0
-  #define X_SERIAL_RX_PIN        X_SERIAL_TX_PIN
+  #define X_SERIAL_TX_PIN                   PA7
+  #define X_SERIAL_RX_PIN                   PB2
 
-  #define Y_SERIAL_TX_PIN                   PD3
-  #define Y_SERIAL_RX_PIN        Y_SERIAL_TX_PIN
+  #define Y_SERIAL_TX_PIN                   PA4
+  #define Y_SERIAL_RX_PIN                   PE7
 
-  #define Z_SERIAL_TX_PIN                   PD0
-  #define Z_SERIAL_RX_PIN        Z_SERIAL_TX_PIN
+  #define Z_SERIAL_TX_PIN                   PA5
+  #define Z_SERIAL_RX_PIN                   PA6
 
-  #define E0_SERIAL_TX_PIN                  PC6
-  #define E0_SERIAL_RX_PIN      E0_SERIAL_TX_PIN
+  //#define E0_SERIAL_TX_PIN                  PE11
+  //#define E0_SERIAL_RX_PIN                  PE10
 
-  #define E1_SERIAL_TX_PIN                  PD12
-  #define E1_SERIAL_RX_PIN      E1_SERIAL_TX_PIN
+  #define E1_SERIAL_TX_PIN                  PE13
+  #define E1_SERIAL_RX_PIN                  PE12
 
   // Reduce baud rate to improve software serial reliability
   #define TMC_BAUD_RATE                    19200
@@ -468,12 +468,12 @@
     #endif // !FYSETC_MINI_12864
 
     #if IS_ULTIPANEL
-      #define LCD_PINS_D5            EXP1_05_PIN
-      #define LCD_PINS_D6            EXP1_04_PIN
-      #define LCD_PINS_D7            EXP1_03_PIN
+      //#define LCD_PINS_D5            EXP1_05_PIN
+     // #define LCD_PINS_D6            EXP1_04_PIN
+     // #define LCD_PINS_D7            EXP1_03_PIN
 
       #if ENABLED(REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER)
-        #define BTN_ENC_EN           LCD_PINS_D7  // Detect the presence of the encoder
+       //#define BTN_ENC_EN           LCD_PINS_D7  // Detect the presence of the encoder
       #endif
 
     #endif
