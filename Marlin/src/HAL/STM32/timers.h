@@ -41,7 +41,10 @@
 #define HAL_TIMER_TYPE_MAX UINT16_MAX
 
 // Marlin timer_instance[] content (unrelated to timer selection)
+<<<<<<< HEAD
 #define NUM_HARDWARE_TIMERS 2
+=======
+>>>>>>> bugfix-2.0.x
 #define MF_TIMER_STEP       0  // Timer Index for Stepper
 #define MF_TIMER_TEMP       1  // Timer Index for Temperature
 #define MF_TIMER_PULSE      MF_TIMER_STEP
@@ -117,5 +120,10 @@ FORCE_INLINE static void HAL_timer_set_compare(const uint8_t timer_num, const ha
   }
 }
 
+<<<<<<< HEAD
 #define HAL_timer_isr_prologue(TIMER_NUM)
 #define HAL_timer_isr_epilogue(TIMER_NUM)
+=======
+#define HAL_timer_isr_prologue(T)
+#define HAL_timer_isr_epilogue(T)
+>>>>>>> bugfix-2.0.x
