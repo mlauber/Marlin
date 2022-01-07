@@ -303,16 +303,11 @@
   //#define E3_HARDWARE_SERIAL Serial1
   //#define E4_HARDWARE_SERIAL Serial1
 
-<<<<<<< HEAD
-  #define X_SERIAL_TX_PIN                   PA7
-  #define X_SERIAL_RX_PIN                   PB2
-=======
   //
   // Software serial
   //
   #define X_SERIAL_TX_PIN                   PE0
   #define X_SERIAL_RX_PIN        X_SERIAL_TX_PIN
->>>>>>> bugfix-2.0.x
 
   #define Y_SERIAL_TX_PIN                   PA4
   #define Y_SERIAL_RX_PIN                   PE7
