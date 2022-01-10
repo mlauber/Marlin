@@ -373,7 +373,7 @@ public:
     static void resume_print();
     static void flow_fault();
 
-    #if BOTH(HAS_MENU, PSU_CONTROL)
+    #if BOTH(HAS_LCD_MENU, PSU_CONTROL)
       static void poweroff();
     #endif
 
