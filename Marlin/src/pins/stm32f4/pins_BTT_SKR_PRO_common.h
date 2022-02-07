@@ -286,7 +286,7 @@
 #else
   #define HEATER_2_PIN                      PB0   // Heater2
 #endif
-#define HEATER_BED_PIN                      PD12  // Hotbed
+#define HEATER_BED_PIN                      PB1  // Hotbed
 
 //
 // Fans
